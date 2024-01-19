@@ -1,8 +1,6 @@
 import mongoose from "npm:mongoose";
 import { ContactType } from "../types.ts";
 import setDocumentId from "../utils/setDocumentId.ts";
-import validatePhone from "../utils/validatePhone.ts";
-import getCapital from "../utils/getCapital.ts";
 
 const contactSchema = new mongoose.Schema<ContactType>({
   name: { type: String, required: true },
